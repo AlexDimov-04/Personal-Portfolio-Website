@@ -1,0 +1,207 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleksadar Dimov</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- favicon link -->
+    <link rel="icon" type="image/x-icon" href="{% static 'images/computer.png' %}">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="{% url 'index' %}" class="logo">Portfolio Website.</a>
+
+        <div class='bx bx-menu' id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Certificates</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Aleksandar Dimov</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Welcome to my portfolio website! Explore my work, projects, and learn more about me. Feel free to reach
+                out if you have any questions or if you're interested in collaborating. Enjoy your stay! 🖥️</p>
+            <div class="social-media">
+                <a href="https://github.com/AlexDimov-04" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/aleksandar-dimov-8a0470273/" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/alex.dimov.501/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/dimanou_/?hl=bg" target="_blank"><i
+                        class='bx bxl-instagram-alt'></i></a>
+            </div>
+            <a href="{% static 'media/cv_aleksadar.pdf' %}" class="btn" download>Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="{% static 'images/cv_image.jpg' %}" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{% static 'images/about.webp' %}" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Python/JS Developer</h3>
+            <p>
+                In 2022, I jumped into the world of programming with my very first online course. Back then, I had no
+                clue that coding would soon become such a big part of my life. It's been a journey filled with surprises
+                – I've sharpened my problem-solving skills, gotten way more productive, and even made some awesome
+                friends during internships and courses. Fast forward to today, and I'm a confident Python Developer with
+                a bunch of projects under my belt. But I'm not stopping here – I'm always learning and growing, picking
+                up new skills and tackling new challenges in the software world.
+            </p>
+            <a href="https://github.com/AlexDimov-04?tab=repositories" class="btn" target="_blank">Explore my
+                projects</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Certificates</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <img width="350px" src="{% static 'images/basics.jpeg' %}" alt="">
+                <a href="https://softuni.bg/certificates/details/124136/9344e895" class="btn"
+                    target="_blank">Credentials</a>
+            </div>
+
+            <div class="services-box">
+                <img width="350px" src="{% static 'images/fundamentals.jpeg' %}" alt="">
+                <a href="https://softuni.bg/certificates/details/138949/8fde5edb" class="btn"
+                    target="_blank">Credentials</a>
+            </div>
+
+            <div class="services-box">
+                <img width="350px" src="{% static 'images/advanced.jpeg' %}" alt="">
+                <a href="https://softuni.bg/certificates/details/143146/4673ff7c" class="btn"
+                    target="_blank">Credentials</a>
+            </div>
+
+            <div class="services-box">
+                <img width="350px" src="{% static 'images/oop.jpeg' %}" alt="">
+                <a href="https://softuni.bg/certificates/details/150480/d5cc38e8" class="btn"
+                    target="_blank">Credentials</a>
+            </div>
+
+            <div class="services-box">
+                <img width="350px" src="{% static 'images/html_css.jpeg' %}" alt="">
+                <a href="https://softuni.bg/certificates/details/162916/db39d4d6" class="btn"
+                    target="_blank">Credentials</a>
+            </div>
+
+            <div class="services-box">
+                <img width="350px" src="{% static 'images/js.jpeg' %}" alt="">
+                <a href="https://softuni.bg/certificates/details/168290/aacd3d39" class="btn"
+                    target="_blank">Credentials</a>
+            </div>
+
+            <div class="services-box">
+                <img width="350px" src="{% static 'images/web_basics.jpeg' %}" alt="">
+                <a href="https://softuni.bg/certificates/details/177927/647c94b2" class="btn"
+                    target="_blank">Credentials</a>
+            </div>
+
+            <div class="services-box">
+                <img width="350px" src="{% static 'images/web_framework.jpeg' %}" alt="">
+                <a href="https://softuni.bg/certificates/details/182450/3a360dee" class="btn"
+                    target="_blank">Credentials</a>
+            </div>
+
+            <div class="services-box">
+                <img width="350px" src="{% static 'images/algorithms.jpeg' %}" alt="">
+                <a href="https://softuni.bg/certificates/details/181199/454550a9" class="btn"
+                    target="_blank">Credentials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="{% static 'images/rentwise.png' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>RentWise Marketplace</h4>
+                    <p>
+                        Web application built using the Django framework. It empowers users to seamlessly list, explore,
+                        and transact properties, creating a dynamic platform for property rental and sales.
+                    </p>
+                    <a href="https://github.com/AlexDimov-04/Property-Rental-Marketplace---RentWise" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form method="POST">
+            {% csrf_token %}
+            <div class="input-box">
+                {{form.first_name}}
+                {{form.last_name}}
+            </div>
+            <div class="input-box">
+                {{form.email}}
+                {{form.email_subject}}
+            </div>
+            {{form.message}}
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Aleksadar Dimov | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="{% static 'js/script_portfolio.js' %}"></script>
+</body>
+
+</html>

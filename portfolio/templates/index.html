@@ -17,6 +17,7 @@
 
     <!-- favicon link -->
     <link rel="icon" type="image/x-icon" href="{% static 'images/computer.png' %}">
+    
 </head>
 
 <body>
@@ -39,6 +40,13 @@
     <!-- home section design -->
     <section class="home" id="home">
         <div class="home-content">
+            {% for message in messages %}
+                <div class="alert alert-success my-2 p-3" role="alert">
+                    <p style="font-size:18px; color: rgb(81, 192, 81);">
+                        {{ message }}<br>
+                    </p>
+                </div>
+            {% endfor %}
             <h3>Hello, It's Me</h3>
             <h1>Aleksandar Dimov</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
@@ -63,7 +71,7 @@
     <!-- about section design -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="{% static 'images/about.webp' %}" alt="">
+            <img src="{% static 'images/cv2.jpg' %}" alt="cv_img">
         </div>
 
         <div class="about-content">

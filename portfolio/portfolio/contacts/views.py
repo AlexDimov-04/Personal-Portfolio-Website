@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from portfolio.contacts.forms import ContactForm
 from django.core.mail import send_mail
+from django.contrib import messages
 
 def index(request):
     if request.method == 'GET':
@@ -24,6 +25,7 @@ def index(request):
             recipient_list = ['alex.lemuel@gmail.com']  
             send_mail(subject, message, from_email, recipient_list)
 
+            messages.success(request, 'Your message has been sent successfully. Thank you!')
             return redirect('index')
         
     context = {
@@ -31,3 +33,6 @@ def index(request):
     }
 
     return render(request, 'index.html', context=context)
+
+def custom_page_not_found(request, exception):
+    return render(request, '404.html', status=404)
